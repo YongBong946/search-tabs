@@ -12,7 +12,7 @@ const devConfig = {
     format: 'umd',
     name: 'ReactTabs',
     globals: {
-      'prop-types': 'PropTypes',
+      'prop-types': 'PropTypes', 'styled-components': 'styled',
       react: 'React',
     },
     sourcemap: true,
@@ -25,7 +25,7 @@ const devConfig = {
       'process.env.NODE_ENV': JSON.stringify('development'),
     }),
   ],
-  external: ['prop-types', 'react'],
+  external: ['prop-types', 'react', 'styled-components'],
 };
 
 const productionConfig = {
@@ -35,7 +35,7 @@ const productionConfig = {
     format: 'umd',
     name: 'ReactTabs',
     globals: {
-      react: 'React',
+      react: 'React', 'styled-components': 'styled',
     },
     sourcemap: true,
   },
@@ -49,7 +49,9 @@ const productionConfig = {
     }),
     uglify(),
   ],
-  external: ['react'],
+  external: ['react', 'styled-components'],
 };
 
+
 export default [devConfig, productionConfig];
+
