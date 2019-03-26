@@ -4,8 +4,6 @@ import { Tabs, Tab, TabList, TabPanel } from './NavTab.style';
 const NavTab = props => {
   const { vertical } = props;
 
-  // const vertical = false
-
   return (
     <Tabs
       vertical={vertical}
