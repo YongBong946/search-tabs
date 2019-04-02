@@ -13,6 +13,7 @@ export const Tabs = styled(StyledTabs)`
   margin: 0;
   flex-direction: ${props => (props.vertical ? 'row' : 'column')};
   position: absolute;
+  overflow: hidden;
 `;
 
 export const TabList = styled(StyledTabList)`
