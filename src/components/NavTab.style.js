@@ -12,11 +12,13 @@ export const Tabs = styled(StyledTabs)`
   display: flex;
   margin: 0;
   flex-direction: ${props => (props.vertical ? 'row' : 'column')};
+  position: absolute;
 `;
 
 export const TabList = styled(StyledTabList)`
   margin: 0;
-  width: ${props => (props.vertical ? '25%' : '100%')};
+  width: ${props => (props.vertical ? '96px' : '100%')};
+  min-width: ${props => (props.vertical ? '96px' : '100%')};
   height: ${props => (props.vertical ? '100%' : '100%')};
   display: flex;
   flex-direction: ${props => (props.vertical ? 'column' : 'row')};
@@ -54,11 +56,16 @@ export const Tab = styled(StyledTab)`
 export const TabPanel = styled(StyledTabPanel)`
   margin: 0;
   display: none;
-  width: ${props => (props.vertical ? '75%' : '100%')};
-  // border: 1px solid black;
+  padding-bottom: 96px;
+  padding-left: 32px;
+  padding-right: 32px; 
+  width: ${props => (props.vertical ? '256px' : '100%')};
+  min-width: ${props => (props.vertical ? '256px' : '100%')};
   color: white;
-  background-color: black;
-  // border-left: 1px solid #999999
+  background-color: #f2f2f2;
+  overflow: scroll;
+  z-index: 4444;
+
 
   &.selected {
     display: block;
