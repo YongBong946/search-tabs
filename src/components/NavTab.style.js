@@ -31,10 +31,11 @@ export const Tab = styled(StyledTab)`
   display: flex;
   justify-content: center;
   align-items: center;
-  // box-sizing: border-box;
   margin: 0;
-  width: ${props => (props.vertical ? '98%' : '20%')};
-  height: ${props => (props.vertical ? '10%' : '98%')};
+  width: ${props => (props.vertical ? '96px' : '20%')};
+  min-width: ${props => (props.vertical ? '96px' : '20%')};
+  height: ${props => (props.vertical ? '10%' : '80px')};
+  min-height: ${props => (props.vertical ? '10%' : '80px')};
   user-select: none;
   color: white;
   cursor: arrow;
@@ -58,14 +59,13 @@ export const TabPanel = styled(StyledTabPanel)`
   display: none;
   padding-bottom: 96px;
   padding-left: 32px;
-  padding-right: 32px; 
+  padding-right: 32px;
   width: ${props => (props.vertical ? '256px' : '100%')};
   min-width: ${props => (props.vertical ? '256px' : '100%')};
   color: white;
   background-color: #f2f2f2;
   overflow: scroll;
   z-index: 4444;
-
 
   &.selected {
     display: block;
