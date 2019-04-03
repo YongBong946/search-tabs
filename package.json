@@ -1,6 +1,6 @@
 {
   "name": "styled-react-tabs",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "An accessible and easy tab component for ReactJS",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -111,7 +111,8 @@
   "dependencies": {
     "classnames": "^2.2.0",
     "prop-types": "^15.5.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.2.0",
+    "typescript": "^3.4.1"
   },
   "jest": {
     "roots": [

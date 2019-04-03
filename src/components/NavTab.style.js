@@ -21,8 +21,8 @@ export const TabList = styled(StyledTabList)`
   margin: 0;
   width: ${props => (props.vertical ? '96px' : '100%')};
   min-width: ${props => (props.vertical ? '96px' : '100%')};
-  height: ${props => (props.vertical ? '100%' : '96px')};
-  min-height: ${props => (props.vertical ? '100%' : '96px')};
+  height: ${props => (props.vertical ? '100vh' : '96px')};
+  min-height: ${props => (props.vertical ? '100vh' : '96px')};
   display: flex;
   flex-direction: ${props => (props.vertical ? 'column' : 'row')};
   list-style: none;
@@ -64,8 +64,8 @@ export const TabPanel = styled(StyledTabPanel)`
   padding-bottom: ${props => (props.vertical ? '96px' : '0')};
   padding-left: ${props => (props.vertical ? '32' : '0')};
   padding-right: ${props => (props.vertical ? '32' : '0')};
-  width: ${props => (props.vertical ? '256px' : '100vw')};
-  min-width: ${props => (props.vertical ? '256px' : '100vw')};
+  width: ${props => (props.vertical ? '256px' : '256px')};
+  min-width: ${props => (props.vertical ? '256px' : '256px')};
   height: ${props => (props.vertical ? '100%' : '96px')};
   color: black;
   background-color: #f2f2f2;
