@@ -7,7 +7,8 @@ import StyledTab from './Tab.js';
 export const Tabs = styled(StyledTabs)`
   font-family: BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 15px;
-  width: ${props => (props.vertical ? '28vw' : '100vw')};
+  width: ${props => (props.vertical ? '416px' : '100vw')};
+  min-width: ${props => (props.vertical ? '416px' : '100vw')};
   height: ${props => (props.vertical ? '100vh' : '15vh')};
   display: flex;
   margin: 0;
