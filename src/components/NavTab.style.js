@@ -9,7 +9,7 @@ export const Tabs = styled(StyledTabs)`
   font-size: 15px;
   width: ${props => (props.vertical ? '416px' : '100vw')};
   min-width: ${props => (props.vertical ? '416px' : '100vw')};
-  height: ${props => (props.vertical ? '100vh' : '192px')};
+  height: ${props => (props.vertical ? '100vh' : '100vh')};
   display: flex;
   margin: 0;
   flex-direction: ${props => (props.vertical ? 'row' : 'column')};
@@ -35,10 +35,10 @@ export const Tab = styled(StyledTab)`
   justify-content: center;
   align-items: center;
   margin: 0;
-  width: ${props => (props.vertical ? '93px' : '20%')};
-  min-width: ${props => (props.vertical ? '93px' : '20%')};
-  height: ${props => (props.vertical ? '10%' : '93px')};
-  min-height: ${props => (props.vertical ? '10%' : '93px')};
+  width: ${props => (props.vertical ? '93px' : '14.3%')};
+  min-width: ${props => (props.vertical ? '93px' : '14.3%')};
+  height: ${props => (props.vertical ? '93px' : '93px')};
+  min-height: ${props => (props.vertical ? '93px' : '93px')};
   user-select: none;
   color: white;
   cursor: arrow;
@@ -62,11 +62,11 @@ export const TabPanel = styled(StyledTabPanel)`
   margin: 0;
   display: none;
   padding-bottom: ${props => (props.vertical ? '96px' : '0')};
-  padding-left: ${props => (props.vertical ? '32' : '0')};
-  padding-right: ${props => (props.vertical ? '32' : '0')};
+  padding-left: ${props => (props.vertical ? '32px' : '16px')};
+  padding-right: ${props => (props.vertical ? '32px' : '16px')};
   width: ${props => (props.vertical ? '256px' : '256px')};
   min-width: ${props => (props.vertical ? '256px' : '256px')};
-  height: ${props => (props.vertical ? '100%' : '96px')};
+  height: ${props => (props.vertical ? '100%' : '100vh')};
   color: black;
   background-color: #f2f2f2;
   overflow: scroll;

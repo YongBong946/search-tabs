@@ -1,6 +1,6 @@
 {
   "name": "styled-react-tabs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An accessible and easy tab component for ReactJS",
   "main": "lib/index.js",
   "module": "esm/index.js",
